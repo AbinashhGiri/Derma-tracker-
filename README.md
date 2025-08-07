@@ -13,8 +13,7 @@ An AI-powered skincare web app that helps users:
 - 🧴 Tips and product suggestions
 - 💾 History tracking with localStorage
 
-## Live Demo
-👉 [Link here if deployed]
+
 
 ## Tech Stack
 - HTML / CSS / JavaScript
@@ -22,5 +21,5 @@ An AI-powered skincare web app that helps users:
 - Skinive API / OpenAI (future integration)
 
 ## Author
-[Your Name](https://github.com/yourusername)
+[Your Name](https://github.com/AbinashhGiri)
 
