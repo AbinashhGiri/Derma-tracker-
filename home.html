@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Derma Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body><!-- Inside <body>, before main-container -->
+    <header class="navbar">
+      <div class="navbar-brand">Derma Tracker</div>
+      <nav class="navbar-links" id="navbarLinks">
+        <a href="#" onclick="showSection('home')">Home</a>
+        <a href="#" onclick="showSection('about')">About</a>
+        <a href="#" onclick="showSection('tips')">Tips</a>
+      </nav>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </header>
+    
+    <div id="aboutSection" class="section" style="display:none;">
+      <h3>About Derma Tracker</h3>
+      <p>Derma Tracker is your AI-powered skincare companion. Upload your skin photo and receive personalized suggestions based on your skin type.</p>
+    </div>
+    
+    <div id="tipsSection" class="section" style="display:none;">
+      <h3>Skincare Tips</h3>
+      <ul>
+        <li>🧴 Always moisturize after cleansing.</li>
+        <li>☀️ Use sunscreen daily, even indoors.</li>
+        <li>💧 Drink enough water for skin hydration.</li>
+        <li>🌙 Stick to a morning and night routine.</li>
+        <li>🧼 Avoid over-washing oily skin — it makes it worse!</li>
+      </ul>
+    </div>
+    
+  <div class="main-container">
+    <h2>Welcome to Derma Tracker</h2>
+
+    <section class="upload-box">
+      <label for="skinImage">Upload Skin Image:</label>
+      <input type="file" id="skinImage" accept="image/*" />
+      <img id="preview" style="max-width: 100%; display: none; margin-top: 10px;" />
+      <button onclick="analyzeSkin()">Analyze Skin Type</button>
+      <p id="skinResult"></p>
+      <p id="skinTips"></p>
+    </section>
+
+
+    <section>
+        <h3>Your Skin Analysis History</h3>
+        <ul id="historyList"></ul>
+      </section>
+      
+  </div>
+
+  <script src="tracker.js"></script>
+</body>
+</html>
